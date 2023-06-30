@@ -1,3 +1,33 @@
+*{
+  background-color: #03001C;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ 
+
+
+/* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+font-family: 'Teko', sans-serif;
+}
+/* img{
+  transition: all 0.2s linear;
+}
+img:hover{
+  transform: scale(0.9);
+  border-radius: 20px;
+ 
+} */
+.card{
+  transition: all 0.2s linear;
+}
+.card:hover{
+  transform: scale(0.9);
+ 
+}
+.card-body a:hover{
+   background-color: red;
+   border: 1px solid white;
+}
 .App {
   text-align: center;
 }
