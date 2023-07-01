@@ -1,3 +1,7 @@
+![Screenshot 2023-06-30 183342](https://github.com/Eshan091/KhabronKiDuniya/assets/124865881/15f049cc-a1c3-437c-9db2-d6abba0e0e9a)
+
+![Screenshot 2023-06-30 183416](https://github.com/Eshan091/KhabronKiDuniya/assets/124865881/2a5f2581-ba80-4d08-8ebf-a9d85ae08ad2)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
