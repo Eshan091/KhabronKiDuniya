@@ -1,14 +1,17 @@
-import React, { Component } from "react";
+import React from "react";
 
-export class NewsItem extends Component {
-  render() {
-    let { title, description, imageUrl, newsUrl, author, date } = this.props;
-    return (
-      <div className="my-3 ">
-        <div
-          className="card border border-2 border-light"
-         
-        >
+const NewsItem = (props) => {
+  let { title, description, imageUrl, newsUrl, author, date, sources } = props;
+  return (
+    <div className="my-3 ">
+      
+        <div className="card border border-2 border-light ">
+          <span
+            className="position-absolute top-0  translate-middle badge rounded-pill bg-danger text-white"
+            style={{ left: "50%", zIndex: "1", border: "1px solid white" }}
+          >
+            source: {sources}
+          </span>
           <img
             src={
               imageUrl
@@ -21,7 +24,8 @@ export class NewsItem extends Component {
           <div className="card-body " style={{ color: "white" }}>
             <h5 className="card-title">{title}...</h5>
             <p className="card-text">{description}...</p>
-            <p className="card-text" >
+
+            <p className="card-text">
               <small className="text-success">
                 {" "}
                 By {author ? author : "Unknown"} on{" "}
@@ -29,18 +33,13 @@ export class NewsItem extends Component {
               </small>
             </p>
 
-            <a
-              href={newsUrl}
-              target="_blank" rel="noreferrer"
-              className="btn btn-sm btn-primary"
-            >
-              Read More
-            </a>
+            <a href={newsUrl} target="_blank" rel="noreferrer"  className="btn btn-sm btn-primary"   > Read More </a>
           </div>
+          
         </div>
-      </div>
-    );
-  }
-}
+      
+    </div>
+  );
+};
 
 export default NewsItem;
